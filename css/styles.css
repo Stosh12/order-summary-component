@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Reset Style Rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Colors set for CSS variables below */
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+/* Body formatted for the light swoosh in the background */
+
+body {
+    background-color: var(--pale-blue);
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-size: 100%;
+}
+
+/* Main order summary  card CSS begins here */
+
+.card {
+    position: relative;
+    display: block;
+    width: 327px;
+    height: 567px;
+    margin: 10% auto 0px auto;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    /* background: url(../images/background-templates/order-summary-card-design-mobile-50.jpg); */
+    background-color: white;
+    /* outline: 1px solid red; */
+    box-shadow: 0px 25px 40px 0px hsla(223, 47%, 23%, .15);
+}
+
+/* Pseudo class experiment for adding a background image to the card */
+
+/* .card::after {
+    content: "";
+    background: url(../images/background-templates/order-summary-card-design-mobile.jpg);
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+} */
+.image-header img {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.main-text {
+    position: relative;
+    display: block;
+}
+h1 {
+    position: relative;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    margin: 33px 0px 15px 0px;
+}
+.tag-line {
+    position: relative;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: .004em;
+    color: hsl(224, 23%, 65%);
+    padding: 0px 35px 0px 35px;  
+}
+
+/* Annual Plan box and content */
+
+.annual-plan-info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 277px;
+    height: 80px;
+    background-color: var(--very-pale-blue);
+    margin: 24px auto 25px auto;
+    padding: 0px 0px 0px 0px;
+    border-radius: 15px;
+    /* border: 1px solid red; */
+    /* outline: 1px solid red; */
+}
+.music-symbol {
+    position: relative;
+    left: 15px;
+    display: block;
+    z-index: 1;
+    /* outline: 1px solid red; */
+}
+.annual-plan-group {
+    position: relative;
+    left: -14px;
+    width: fit-content;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    /* outline: 1px solid red; */
+}
+.annual-plan-heading {
+    font-weight: 700;
+    margin: 0px 0px 2px 0px;
+}
+.year {
+    position: relative;
+    /* top: 2px; */
+    color: hsl(224, 23%, 65%);
+}
+.change {
+    position: relative;
+    top: 2px;
+    right: 15px;
+    width: fit-content;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--bright-blue);
+    /* border: 1px solid red; */
+}
+.change:hover {
+    color: hsl(245, 75%, 70%);
+    text-decoration: none;
+}
+
+/* Payment button */
+
+.payment {
+    position: relative;
+    display: block;
+    width: 277px;
+    height: 50px;
+    background-color: var(--bright-blue);
+    margin: 0px auto 0px auto;
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 20px 20px 0px hsla(245, 75%, 52%, .2);
+}
+.payment:hover {
+    background-color: hsl(245, 75%, 70%);
+}
+
+/* Cancel Order */
+
+.cancel-order {
+    display: block;
+    position: relative;
+    top: 24px;
+    width:fit-content;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    margin: 0px auto 0px auto;
+    /* outline: 1px solid red; */
+}
+.cancel-order:hover {
+    color: rgb(0,0,0);
+}
+
+/* Attribution */
+
+.attribution {
+    position: relative;
+    display: block;
+    top: 35px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    font-weight: 700;
+}
+.attribution a:hover {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+
+/* Media query for the desktop version of this order summary card to display */
+
+@media screen and (min-width: 1025px) {
+
+body {
+    background-image: url(../images/pattern-background-desktop.svg);
+}
+.card {
+    width: 450px;
+    height: 697px;
+    /* background: url(../images/background-templates/order-summary-card-design-desktop-50.jpg); */
+}
+h1 {
+    font-size: 28px;
+    margin: 45px 0px 18px 0px;
+}
+.tag-line {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: .004em;
+    color: hsl(224, 23%, 65%);
+    padding: 0px 50px 0px 50px;  
+}
+.annual-plan-info-box {
+    width: 354px;
+    height: 100px;
+    margin: 20px auto 31px auto;
+    border-radius: 15px;
+    /* border: 1px solid red; */
+    /* outline: 1px solid red; */
+}
+.music-symbol {
+    left: 25px;
+}
+.annual-plan-group {
+    left: -38px;
+    font-size: 16px;
+}
+.annual-plan-heading {
+    font-weight: 700;
+    margin: 0px 0px 6px 0px;
+}
+.payment {
+    width: 354px;
+    font-size: 16px;
+    letter-spacing: -.015em;
+}
+.cancel-order {
+    top: 32px;
+    font-size: 16px;
+}
+.change {
+    right: 25px;
+    font-size: 14px;
+}
+
+}
