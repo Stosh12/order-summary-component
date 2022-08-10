@@ -1,91 +1,165 @@
-# Frontend Mentor - Order summary card
+# Frontend Mentor - Order summary card solution
 
-![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
+Users should be able to:
 
-Your challenge is to build out this order summary card component and get it looking as close to the design as possible.
+- View the two optimal layouts depending on their device's screen size, as listed here.
+  1. A mobile layout that maintains its size from 375px. – 1224px.
+  2. A desktop layout that maintains its size 1225px. – infinity and beyond.
+- See the hover states for the three interactive elements, as described below.
+  1. On hover the word "change" on the annual plan section will become lighter.
+  2. On hover the the "Proceed to Payment" button will become lighter.
+  3. On hover the words "Cancel Order" will change from a medium gray to a black.
+- Additional non-required hovers
+  - Credit line text: Frontend Mentor will change from a bright blue to a desaturated blue and the underline with disappear.
+  - Credit line text: coder's name will change from a bright blue to a desaturated blue and the underline with disappear.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+  <br>
 
-Your users should be able to:
 
-- See hover states for interactive elements
+### Screenshots
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+![](images/readme-images/order-summary-component-mobile-01-01.jpg)
+![](images/readme-images/order-summary-component-desktop-01-01.jpg)
 
-## Where to find everything
+The two screenshots above represent this solution as viewed in the Safari web browser on the Mac. Both screenshots are at 100%. The mobile view is present from 375px. – 1224px. and then the desktop view engages at 1225px. to infinity and beyond…
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [GitHub Repository — Solution Files](https://github.com/Stosh12/order-summary-component.git)
+- Live Site URL: [GitHub Pages — Solution Website](https://stosh12.github.io/order-summary-component/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Built with
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- Visual Studio Code
+- MacDown to create the ReadMe file
+- Photoshop for layout templates and ReadMe file screenshot edits
 
-## Building your project
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### What I learned
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+This challenge continued to aid in my learning about Flexbox. It gave me the opportunity to practice more with structuring my HTML for Flexbox and configuring my CSS selectors to work within that structure.
 
-## Deploying your project
+<br>
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+#### HTML
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+This is the HTML structure I created to work with Flexbox for the organization of the content within the Annual Plan box. The div with class, "annual-pan-info-box" became my Flexbox container for all the other items within the Annual Plan box. With this structure I was able to easily organize the content within that box per the design.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+```html
+    <div class="annual-plan-info-box">
+    <svg class="music-symbol" xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#DFE6FB"/><path fill="#717FA6" fill-rule="nonzero" d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"/>
+    </g></svg>
+    <div class="annual-plan-group">
+      <p class="annual-plan-heading">Annual Plan</p>
+      <p class="year">$59.99/year</p>
+    </div>
+    <a  class="change" href="#">Change</a>
+    </div>
+```
+<br>
 
-## Create a custom `README.md`
+#### CSS
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+The CSS below shows the "annual-plan-info-box" selector/container with its Flexbox specific properties and others. The Flexbox specific declarations are called out at the three following bullet points. Also, below this selector are the other selectors for the other elements within that Flexbox selector/container.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+* display: flex;
+* justify-content: space-between;
+* align-items: center;
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+```css
+.annual-plan-info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 277px;
+    height: 80px;
+    background-color: var(--very-pale-blue);
+    margin: 24px auto 25px auto;
+    padding: 0px 0px 0px 0px;
+    border-radius: 15px;
+}
+.music-symbol {
+    position: relative;
+    left: 15px;
+    display: block;
+    z-index: 1;
+}
+.annual-plan-group {
+    position: relative;
+    left: -14px;
+    width: fit-content;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+.annual-plan-heading {
+    font-weight: 700;
+    margin: 0px 0px 2px 0px;
+}
+.year {
+    position: relative;
+    color: hsl(224, 23%, 65%);
+}
+.change {
+    position: relative;
+    top: 2px;
+    right: 15px;
+    width: fit-content;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--bright-blue);
+}
+.change:hover {
+    color: hsl(245, 75%, 70%);
+    text-decoration: none;
+}
+```
+<br>
 
-## Submitting your solution
+### Continued development
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+I would like to continue working with Flexbox and getting even better with it. I have found that it can be more efficient and easier to use than standard CSS positioning. CSS Grid, which I didn't use in this project, is another alternative to Flexbox; but its another CSS styling technique or method I would like to continue learning more about.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+### Useful resources
 
-## Sharing your solution
+- [CSS Flex Container](https://www.w3schools.com/css/css3_flexbox_container.asp) - This is good reference for Flexbox's Flex container properties and values. I didn't us this specifically; but it's content is similar to my notes from my previous experimentation and implementation of Flexbox.
 
-There are multiple places you can share your solution:
+## Author
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+- Website — Portfolio - [Alan Perrow](https://apmail127.myportfolio.com)
+- Frontend Mentor - [@stosh12](https://www.frontendmentor.io/profile/stosh12)
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+## Acknowledgments
 
-## Got feedback for us?
+I give thanks to Frontend Mentor for creating and hosting these challenge, which have helped me learn more about front end Web Design coding!
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
