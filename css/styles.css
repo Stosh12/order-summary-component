@@ -37,11 +37,9 @@ body {
     width: 327px;
     height: 567px;
     margin: 10% auto 0px auto;
-    /* border: 1px solid red; */
     border-radius: 20px;
     /* background: url(../images/background-templates/order-summary-card-design-mobile-50.jpg); */
     background-color: white;
-    /* outline: 1px solid red; */
     box-shadow: 0px 25px 40px 0px hsla(223, 47%, 23%, .15);
 }
 
@@ -103,15 +101,12 @@ h1 {
     margin: 24px auto 25px auto;
     padding: 0px 0px 0px 0px;
     border-radius: 15px;
-    /* border: 1px solid red; */
-    /* outline: 1px solid red; */
 }
 .music-symbol {
     position: relative;
     left: 15px;
     display: block;
     z-index: 1;
-    /* outline: 1px solid red; */
 }
 .annual-plan-group {
     position: relative;
@@ -120,7 +115,6 @@ h1 {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
     font-size: 15px;
-    /* outline: 1px solid red; */
 }
 .annual-plan-heading {
     font-weight: 700;
@@ -128,7 +122,6 @@ h1 {
 }
 .year {
     position: relative;
-    /* top: 2px; */
     color: hsl(224, 23%, 65%);
 }
 .change {
@@ -140,7 +133,6 @@ h1 {
     font-weight: 700;
     font-size: 13px;
     color: var(--bright-blue);
-    /* border: 1px solid red; */
 }
 .change:hover {
     color: hsl(245, 75%, 70%);
@@ -181,7 +173,6 @@ h1 {
     color: var(--desaturated-blue);
     text-decoration: none;
     margin: 0px auto 0px auto;
-    /* outline: 1px solid red; */
 }
 .cancel-order:hover {
     color: rgb(0,0,0);
@@ -235,8 +226,6 @@ h1 {
     height: 100px;
     margin: 20px auto 31px auto;
     border-radius: 15px;
-    /* border: 1px solid red; */
-    /* outline: 1px solid red; */
 }
 .music-symbol {
     left: 25px;
